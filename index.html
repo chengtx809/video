@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>视频解析</title>
+  <title>视频在线解析</title>
   <style>
     body {
       display: flex;
@@ -25,17 +25,47 @@
       color: white;
       border: none;
       cursor: pointer;
+      border-radius: 5px; /* 圆角半径 */
+      margin: 10px; /* 四周的间距 */
     }
+    
+    p {
+      color: gray;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    h2 {
+      color: gray;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+    
+    h1 {
+      color: gray;
+      font-size: 24px;
+      margin-top: 20px;
+    }
+
   </style>
 </head>
 <body>
+  <h1>在线视频解析</h1>
   <input type="text" id="videoLink" placeholder="请粘贴视频链接">
-  <button onclick="parseVideo()">解析按钮</button>
-
+  <button onclick="Video1()">解析接口1</button>
+  <button onclick="Video2()">解析接口2</button>
+  <h2>当接口无法使用时，请更换其他接口重新尝试！</h2>
+  <h2>请不要轻易相信视频中的广告⚠️谨防上当受骗！</h2>
+  <p>本项目已开源：https://github.com/chengtx809/video</p>
   <script>
-    function parseVideo() {
+    function Video1() {
       const videoLink = document.getElementById('videoLink').value;
-      window.open('https://im1907.top/?jx=' + videoLink);
+        window.open('https://im1907.top/?jx=' + videoLink);
+    }
+    
+    function Video2() {
+      const videoLink = document.getElementById('videoLink').value;
+      window.open('https://jx.xmflv.com/?url=' + videoLink);
     }
   </script>
 </body>
