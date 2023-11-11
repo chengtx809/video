@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>视频在线解析</title>
+  <title>解析坊-VIP视频在线解析</title>
   <style>
     body {
       display: flex;
@@ -50,22 +50,27 @@
   </style>
 </head>
 <body>
-  <h1>在线视频解析</h1>
+  <h1>解析坊-VIP视频在线解析</h1>
   <input type="text" id="videoLink" placeholder="请粘贴视频链接">
-  <button onclick="Video1()">解析接口1</button>
+  <button onclick="Video1()">解析接口1(im1907云加速)</button>
   <button onclick="Video2()">解析接口2</button>
+  <button onclick="Video3()">解析接口3(全民解析)</button>
   <h2>当接口无法使用时，请更换其他接口重新尝试！</h2>
   <h2>请不要轻易相信视频中的广告⚠️谨防上当受骗！</h2>
   <p>本项目已开源：https://github.com/chengtx809/video</p>
+  <p>本站仅供学习使用</p>
   <script>
     function Video1() {
       const videoLink = document.getElementById('videoLink').value;
-        window.open('https://im1907.top/?jx=' + videoLink);
+      window.open('https://jx.xmflv.com/?url=' + videoLink);
     }
-    
     function Video2() {
       const videoLink = document.getElementById('videoLink').value;
-      window.open('https://jx.xmflv.com/?url=' + videoLink);
+        window.open('https://im1907.top/?jx=' + videoLink);
+    }
+    function Video3() {
+      const videoLink = document.getElementById('videoLink').value;
+        window.open('https://api.quanminjiexi.com/?v=' + videoLink);
     }
   </script>
 </body>
