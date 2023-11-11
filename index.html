@@ -55,6 +55,8 @@
   <button onclick="Video1()">解析接口1(xmflv稳定解析)</button>
   <button onclick="Video2()">解析接口2(im1907云加速)</button>
   <button onclick="Video3()">解析接口3(全民解析)</button>
+  <h2>其他工具</h2>
+  <button onclick="tool1()">哔哩哔哩视频下载(贝贝bilibili)</button>
   <h2>当接口无法使用时，请更换其他接口重新尝试！</h2>
   <h2>请不要轻易相信视频中的广告⚠️谨防上当受骗！</h2>
   <p>本项目已开源：https://github.com/chengtx809/video</p>
@@ -71,6 +73,9 @@
     function Video3() {
       const videoLink = document.getElementById('videoLink').value;
         window.open('https://api.quanminjiexi.com/?v=' + videoLink);
+    }
+    function tool1() {
+      window.open('https://xbeibeix.com/api/bilibili/');
     }
   </script>
 </body>
